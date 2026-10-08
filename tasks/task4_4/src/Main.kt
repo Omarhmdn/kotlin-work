@@ -13,17 +13,24 @@ fun main(args: Array<String>) {
    if (args.size != 3) {
         println("Wrong number of arguments")
         exitProcess(1)
-    }
-var initial_temp_celcius = args[0]
-val max_temp_celcius = args[1]
-var temp_increment = args[2]
+   }
+   var initial_temp_celcius = args[0].toFloat()
+
+   val max_temp_celcius = args[1].toFloat()
+
+   var temp_increment = args[2].toFloat()
 
 
-while (initial_temp_celcius.toFloat() <= max_temp_celcius.toFloat()) {
-    val temp_farenheit = 
-    println("%5.1f %6.1f".format(x, y))
-    x += 2.5
-}
+   while (initial_temp_celcius <= max_temp_celcius) {
 
+       var temp_farenheit = (initial_temp_celcius * 1.8 + 32)
+
+       println("%5.1f %6.1f".format(initial_temp_celcius, temp_farenheit))
+
+       initial_temp_celcius += temp_increment
+
+	}
+
+   
 
 }
