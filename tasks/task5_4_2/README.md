@@ -1,7 +1,9 @@
-# Task 5.4.2
+# Task 5.4.1
 
-Copy the source files from Task 5.4.1 into the `src` subdirectory, then
-modify the code so that `isTooLong` is an extension property rather than an
-extension function.
+Add to `src/StringTools.kt` an extension function for `String` named
+`isTooLong()`. This function should return `true` if the length of the string
+is greater than 20, otherwise `false`.
 
-Run the program to verify that its behaviour is unchanged.
+Then add to `src/Main.kt` a program that tests your extension function.
+This should call the function with strings of different lengths and display
+the result.
