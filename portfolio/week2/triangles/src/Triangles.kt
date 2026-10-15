@@ -9,8 +9,8 @@ typealias Triangle = Triple<Double,Double,Double>
 
 fun triangleArea(t: Triangle): Double {
     val (a, b, c) = t
-    val s = 0.5 * (a + b + c)
-    return kotlin.math.sqrt(s * (s - a) * (s - b) * (s - c))
+    val semiperimeter = 0.5 * (a + b + c)
+    return kotlin.math.sqrt(semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c))
 }
 
 fun isValidTriangle(t: Triangle): Boolean {

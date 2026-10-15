@@ -3,6 +3,7 @@
 
 
 fun redact(document: String, text: String, char: Char = 'X'): String {
-    val replacement = char.toString().repeat(text.length)
-    return document.replace(text, replacement)
+    
+    val redacted_values = char.toString().repeat(text.length)
+    return document.replace(text, redacted_values)
 }
