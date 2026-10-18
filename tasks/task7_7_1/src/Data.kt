@@ -2,8 +2,8 @@
 import kotlin.io.path.Path
 import kotlin.io.path.forEachLine
 
-fun readData(filename: String) = buildList {
-   Path(filename).forEachLine {
-       add(it.toFloat())
-   }
+fun readData(filename: String): List<Float> = buildList {
+    Path(filename).forEachLine { line ->
+        if (line.isNotBlank()) add(line.trim().toFloat())
+    }
 }

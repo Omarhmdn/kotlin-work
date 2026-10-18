@@ -1,4 +1,5 @@
 // Task 7.2: array comparison
+
 fun main() {
     val numbers = intArrayOf(9, 6, 3, 2)
 
